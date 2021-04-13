@@ -58,4 +58,4 @@ cat <file> | ./hsh
 
 [UNIX shell]: <https://en.wikipedia.org/wiki/Unix_shell>
 [Esneider Granada Valencia]: <https://github.com/sneidergv/>
-[Vanesa Musussué]: <https://github.com/vanemcb/>
+[Vanesa Musussué Castro]: <https://github.com/vanemcb/>

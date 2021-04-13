@@ -2,7 +2,7 @@
 
 /**
 * _interactive - Executes the shell interactive mode.
-* Return: void.
+* Return: 0, or 127 if the command is not found.
 */
 
 int _interactive(void)

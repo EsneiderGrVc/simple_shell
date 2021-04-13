@@ -3,7 +3,7 @@
 /**
 * exe - Executes an input command if it exists.
 * @argv: Double pointer that contains input arguments.
-* Return: void.
+* Return: 0, or 127 if the command is not found.
 */
 
 int exe(char **argv)

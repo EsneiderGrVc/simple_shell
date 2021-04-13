@@ -26,11 +26,9 @@ int _builtincalls(char *str)
 	case 1:
 		if (isatty(0) == 0)
 			return (1);
-		else
-		{
-			free(str);
-			exit(0);
-		}
+		free(str);
+		exit(0);
+
 	case 2:
 		i = 0;
 		while (environ[i])
