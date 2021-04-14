@@ -32,5 +32,7 @@ int _nointeractive(void)
 		i++;
 	}
 	free(array_input);
+	if (re_built == 2)
+		exit(0);
 	return (re_exe);
 }

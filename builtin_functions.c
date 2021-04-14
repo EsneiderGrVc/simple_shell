@@ -25,7 +25,7 @@ int _builtincalls(char *str)
 	{
 	case 1:
 		if (isatty(0) == 0)
-			return (1);
+			return (2);
 		free(str);
 		exit(0);
 
