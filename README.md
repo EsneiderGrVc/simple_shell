@@ -53,9 +53,9 @@ cat <file> | ./hsh
 `exit` and `env`.
 
  ## Authors:
-  - [Vanesa Musussué]
+  - [Vanesa Mususué Castro]
   - [Esneider Granada Valencia]
 
 [UNIX shell]: <https://en.wikipedia.org/wiki/Unix_shell>
 [Esneider Granada Valencia]: <https://github.com/sneidergv/>
-[Vanesa Musussué Castro]: <https://github.com/vanemcb/>
+[Vanesa Mususué Castro]: <https://github.com/vanemcb/>
