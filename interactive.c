@@ -13,7 +13,7 @@ int _interactive(void)
 
 	while (re_get != EOF)
 	{
-		if (write(STDOUT_FILENO, "#cisfun$ ", 9) == -1)
+		if (write(STDOUT_FILENO, "$ ", 2) == -1)
 			exit(EXIT_FAILURE);
 
 		re_get = getline(&buffer, &size, stdin);
