@@ -8,7 +8,7 @@
 int _interactive(void)
 {
 	size_t size = 0;
-	int re_get = 0, re_built, re_exe, re_space;
+	int re_get = 0, re_built, re_exe = 0, re_space;
 	char *buffer = NULL, **array_input = NULL;
 
 	while (re_get != EOF)
@@ -23,6 +23,12 @@ int _interactive(void)
 			buffer[re_get - 1] = '\0';
 			re_space = space(buffer);
 			re_built = _builtincalls(buffer);
+
+			if (re_built == 2)
+			{
+				free(buffer);
+				exit(re_exe);
+			}
 
 			if (re_built == 0 && re_space == 1)
 			{

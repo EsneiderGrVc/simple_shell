@@ -24,10 +24,7 @@ int _builtincalls(char *str)
 	switch (num_built_ins[i])
 	{
 	case 1:
-		if (isatty(0) == 0)
 			return (2);
-		free(str);
-		exit(0);
 
 	case 2:
 		i = 0;
