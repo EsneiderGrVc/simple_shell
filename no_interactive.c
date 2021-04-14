@@ -21,8 +21,12 @@ int _nointeractive(void)
 	while (array_input[i])
 	{
 		re_built = _builtincalls(array_input[i]);
+		if (re_built == 2)
+		{
+			free(array_input);
+			exit(re_exe);
+		}
 		re_space = space(array_input[i]);
-
 		if (re_built == 0 && re_space == 1)
 		{
 			array_line_input = _token(array_input[i], " ");
@@ -32,7 +36,5 @@ int _nointeractive(void)
 		i++;
 	}
 	free(array_input);
-	if (re_built == 2)
-		exit(re_exe);
 	return (re_exe);
 }
