@@ -16,7 +16,7 @@ int _builtincalls(char *str)
 	while (built_ins[i])
 	{
 		/* implementar nuestro propio strcmp*/
-		if (!_strcmp(str, built_ins[i]))
+		if (!_strcmp(built_ins[i], str))
 			break;
 		i++;
 	}
