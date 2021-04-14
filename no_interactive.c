@@ -33,6 +33,6 @@ int _nointeractive(void)
 	}
 	free(array_input);
 	if (re_built == 2)
-		exit(EXIT_SUCCESS);
+		exit(re_exe);
 	return (re_exe);
 }
