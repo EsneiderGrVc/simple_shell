@@ -14,16 +14,15 @@ int exe(char **argv)
 
 	if (argv[0][0] != '/')
 	{
-		argv[0] = _pathcat(argv[0]);
-		if (argv[0][0] == 'n')
-		{
-			re_stat = -1;
-			re_exe = 127;
-		}
+		if (stat(argv[0], &st) == 0)
+			re_stat = 0;
 		else
 		{
-			re_stat = 0;
-			f = 1;
+			argv[0] = _pathcat(argv[0]);
+			if (argv[0][0] == 'n')
+				re_stat = -1, re_exe = 127;
+			else
+				re_stat = 0, f = 1;
 		}
 	}
 	else
