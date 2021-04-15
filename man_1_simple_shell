@@ -1,18 +1,38 @@
 .\" Manpage for simple_shell.
 .\" Contact
-.TH man 8 "14 Abril 2021" "1.0" "simple_shell man page"
+.TH man 1 "14 Abril 2021" "1.0" "simple_shell man page"
 .SH NAME
-simple_shell \- create a new LDAP user
+simple_shell \- program that emulate the UNIX shell behavior
 .SH SYNOPSIS
-simple_shell [USERNAME]
+.B ./hsh
 .SH DESCRIPTION
-simple_shell is high level shell program for adding users to LDAP server.  On Debian, administrators should usually use simple_shell.debian(8) instead.
+simple_shell is a program that takes commands from the keyboard and gives them
+to the operating system to perform, it can be executed on interactive or
+non-interactive mode.
 .SH OPTIONS
-The simple_shell does not take any options. However, you can supply username.
+The simple_shell does not take any options.
+.SH INVOCATION
+Compile simple_shell whit the following line:
+.PP
+.B gcc *.c -o ./hsh
+.PP
+In order to use the interactive mode execute:
+.PP
+.B ./hsh
+.PP
+And the following string indicates that you stay in the prompt:
+.PP
+.B #cisfun$
+.PP
+In order to use the non-interactive mode execute:
+.PP
+.B echo "[command and flags]" | ./hsh
+.PP
+
+
 .SH SEE ALSO
-useradd(8), passwd(5), simple_shell.debian(8)
+sh(1)
 .SH BUGS
 No known bugs.
 .SH AUTHOR
-Esneider Granada Valencia
-Vanessa Mususue Castro
+\fIEsneider Granada Valencia, Vanessa Mususue Castro.\fP
